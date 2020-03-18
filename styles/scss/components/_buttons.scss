@@ -1,0 +1,26 @@
+button {
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button.download {
+    color: $white;
+    background-color: $accent1;
+    border: transparent;
+    padding: .35rem 2rem .6rem 1rem;
+    border-radius: 2rem;
+    box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(252, 56, 75, 0.3);
+    transition: box-shadow .5s ease-out;
+    &:hover,
+    &:focus-within  {
+        box-shadow: 0.5rem 0.75rem 3.5rem 0.3rem rgba(252, 56, 75, 0.5);
+    }
+    i {
+        font-size: 2rem;
+        position: relative;
+        right: .5rem;
+        top: .25rem;
+    }
+}

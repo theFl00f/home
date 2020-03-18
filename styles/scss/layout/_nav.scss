@@ -1,0 +1,80 @@
+nav {
+    position: relative;
+    bottom: 1rem;
+
+    
+    ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 28.5%;
+    
+        h3 {
+            font-family: $serif;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 1.6rem;
+            padding: .25rem 1rem;
+        }
+    }
+}
+
+#start {
+    color: $accent1;
+    background-color: $accent1Lighter;
+    width: 65%;
+
+}
+
+#skills {
+    color: $accent2;
+    background-color: $accent2Lighter;
+    width: 62%;
+}
+
+#projects {
+    color: $accent3;
+    background-color: $accent3Lighter;
+    width: 70%;
+}
+
+#contact {
+    color: $accent5;
+    background-color: $accent5Lighter;
+    width: 62%;
+}
+
+li:hover #start,
+li:hover #skills,
+li:hover #projects,
+li:hover #contact,
+li:focus-within #start,
+li:focus-within #skills,
+li:focus-within #projects,
+li:focus-within #contact {
+    width: 100%;
+    transition: color .5s linear, background-color .5s ease-out, width .75s ease-in-out;
+}
+
+a:hover #start,
+a:focus-within #start {
+    color: $white;
+    background-color: $accent1;
+}
+
+a:hover #skills,
+a:focus-within #skills {
+    color: $white;
+    background-color: $accent2;
+}
+
+a:hover #projects,
+a:focus-within #projects {
+    color: $white;
+    background-color: $accent3;
+}
+
+a:hover #contact,
+a:focus-within #contact {
+    color: $white;
+    background-color: $accent5;
+}

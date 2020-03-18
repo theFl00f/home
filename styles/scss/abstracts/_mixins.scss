@@ -1,0 +1,12 @@
+    
+    @mixin xs { @media (max-width: $mobilesm) {@content;} }
+    @mixin sm { @media (max-width: $mobile) {@content;} }
+    @mixin med { @media (max-width: $tablet) {@content;} }
+    @mixin lrg { @media (max-width: $desktop-sm) {@content;} }
+
+    @mixin transition {
+        transition: color .33s ease-in-out;
+    }
+
+
+
