@@ -55,26 +55,26 @@ li:focus-within #contact {
     transition: color .5s linear, background-color .5s ease-out, width .75s ease-in-out;
 }
 
-a:hover #start,
-a:focus-within #start {
+li:hover #start,
+li:focus-within #start {
     color: $white;
     background-color: $accent1;
 }
 
-a:hover #skills,
-a:focus-within #skills {
+li:hover #skills,
+li:focus-within #skills {
     color: $white;
     background-color: $accent2;
 }
 
-a:hover #projects,
-a:focus-within #projects {
+li:hover #projects,
+li:focus-within #projects {
     color: $white;
     background-color: $accent3;
 }
 
-a:hover #contact,
-a:focus-within #contact {
+li:hover #contact,
+li:focus-within #contact {
     color: $white;
     background-color: $accent5;
 }

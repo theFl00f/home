@@ -581,26 +581,26 @@ li:focus-within #contact {
   transition: color .5s linear, background-color .5s ease-out, width .75s ease-in-out;
 }
 
-a:hover #start,
-a:focus-within #start {
+li:hover #start,
+li:focus-within #start {
   color: #fff;
   background-color: #FC384B;
 }
 
-a:hover #skills,
-a:focus-within #skills {
+li:hover #skills,
+li:focus-within #skills {
   color: #fff;
   background-color: #7638FC;
 }
 
-a:hover #projects,
-a:focus-within #projects {
+li:hover #projects,
+li:focus-within #projects {
   color: #fff;
   background-color: #27A2AA;
 }
 
-a:hover #contact,
-a:focus-within #contact {
+li:hover #contact,
+li:focus-within #contact {
   color: #fff;
   background-color: #F030DA;
 }
