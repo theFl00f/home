@@ -54,6 +54,20 @@ h4 {
 }
 
 #about h4,
-#skills h4 {
+#skills h4,
+#portfolio h4 {
     font-size: 1.1rem;
+}
+
+#portfolio {
+    h3 {
+        font-size: 1.7rem;
+    }
+    h4 {
+        background-color: unset;
+        color: $dotColor;
+    }
+    a {
+        font-size: 1.8rem;
+    }
 }

@@ -1,0 +1,99 @@
+#portfolio {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        margin: 10% 19%;
+    }
+    li {
+        display: flex;
+        height: 28rem;
+        margin: 5% 0;
+        border: transparent;
+        border-radius: 1rem;
+        background-color: $bgAccent2;
+    }
+    .project {
+        display: flex;
+    }
+    li:nth-of-type(even) {
+        .project {
+            flex-direction: row-reverse;
+        }
+        .imgContainer {
+            border-bottom-right-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
+    }
+    li:nth-of-type(odd) {
+        .imgContainer {
+            border-bottom-left-radius: 2rem;
+            border-top-left-radius: 2rem;
+        }
+    }
+    p {
+        padding: 1% 5% 5% 5%;
+        display: flex;
+        align-items: center;
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        flex-basis: 60%;
+    }
+    .imgContainer {
+        flex-basis: 40%;
+        min-width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2.5%;
+        background-color: $black;
+        border: transparent;
+    }
+    .liveLink, 
+    .githubLink {
+        margin: 0 22.5%;
+        
+    }
+    .githubLink a {
+        color: $dotColor;
+        &:hover,
+        &:focus-within {
+            color: $bgColor;
+        }
+    }
+    .links {
+        display: flex;
+        justify-content: space-around;
+        background: $black;
+        padding: 1.5% 6%;
+        align-self: center;
+        border: transparent;
+        border-radius: 3rem;
+    }
+    li:nth-of-type(1) .liveLink a {
+        color: $accent3;
+        &:hover,
+        &:focus-within {
+            color: $accent3Grad;
+        }
+    }
+    li:nth-of-type(2) .liveLink a {
+        color: $accent5;
+        &:hover,
+        &:focus-within {
+            color: $accent5Lighter;
+        }
+    }
+    li:nth-of-type(3) .liveLink a {
+        color: $accent2;
+        &:hover,
+        &:focus-within {
+            color: $accent2Lighter;
+        }
+    }
+}
