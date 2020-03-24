@@ -340,6 +340,17 @@ h4 {
 
 #portfolio a {
   font-size: 1.8rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem #3A3A3A;
+}
+
+#contact {
+  background-color: unset;
+}
+
+#contact label,
+#contact input {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
 }
 
 body {
@@ -769,6 +780,7 @@ li:focus-within .contact {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 10%;
+  padding-bottom: 5%;
 }
 
 #skills ul {
@@ -869,16 +881,21 @@ li:focus-within .contact {
 }
 
 #portfolio .wrapper {
+  margin-top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #portfolio ul {
-  margin: 10% 19%;
+  margin: 7.5% 19% 10%;
 }
 
 #portfolio li {
@@ -906,13 +923,13 @@ li:focus-within .contact {
 }
 
 #portfolio li:nth-of-type(even) .imgContainer {
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 #portfolio li:nth-of-type(odd) .imgContainer {
-  border-bottom-left-radius: 2rem;
-  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
 }
 
 #portfolio p {
@@ -964,21 +981,12 @@ li:focus-within .contact {
   margin: 0 22.5%;
 }
 
-#portfolio .githubLink a {
-  color: #9d9d9d;
-}
-
-#portfolio .githubLink a:hover, #portfolio .githubLink a:focus-within {
-  color: #FAFBFC;
-}
-
 #portfolio .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #3A3A3A;
   padding: 1.5% 6%;
   -ms-flex-item-align: center;
       align-self: center;
@@ -986,28 +994,125 @@ li:focus-within .contact {
   border-radius: 3rem;
 }
 
-#portfolio li:nth-of-type(1) .liveLink a {
-  color: #27A2AA;
+#portfolio li:nth-of-type(1) .links {
+  background-color: #27A2AA;
+  -webkit-box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(39, 162, 170, 0.4);
+          box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(39, 162, 170, 0.4);
 }
 
-#portfolio li:nth-of-type(1) .liveLink a:hover, #portfolio li:nth-of-type(1) .liveLink a:focus-within {
-  color: #a7ffe0;
+#portfolio li:nth-of-type(1) .links a {
+  color: #DBFEFF;
 }
 
-#portfolio li:nth-of-type(2) .liveLink a {
-  color: #F030DA;
+#portfolio li:nth-of-type(1) .links a:hover, #portfolio li:nth-of-type(1) .links a:focus-within {
+  color: #fff;
 }
 
-#portfolio li:nth-of-type(2) .liveLink a:hover, #portfolio li:nth-of-type(2) .liveLink a:focus-within {
+#portfolio li:nth-of-type(2) .links {
+  background-color: #F030DA;
+  -webkit-box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(240, 48, 218, 0.4);
+          box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(240, 48, 218, 0.4);
+}
+
+#portfolio li:nth-of-type(2) .links a {
   color: #FFD4F4;
 }
 
-#portfolio li:nth-of-type(3) .liveLink a {
-  color: #7638FC;
+#portfolio li:nth-of-type(2) .links a:hover, #portfolio li:nth-of-type(2) .links a:focus-within {
+  color: #fff;
 }
 
-#portfolio li:nth-of-type(3) .liveLink a:hover, #portfolio li:nth-of-type(3) .liveLink a:focus-within {
+#portfolio li:nth-of-type(3) .links {
+  background-color: #7638FC;
+  -webkit-box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(118, 56, 252, 0.5);
+          box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(118, 56, 252, 0.5);
+}
+
+#portfolio li:nth-of-type(3) .links a {
   color: #E5D9FF;
+}
+
+#portfolio li:nth-of-type(3) .links a:hover, #portfolio li:nth-of-type(3) .links a:focus-within {
+  color: #fff;
+}
+
+#contact {
+  background-image: url(../assets/cityBg2.png);
+  padding-top: 10%;
+}
+
+#contact .wrapper {
+  padding: 0 15.5%;
+}
+
+#contact .contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contact h2 {
+  padding-bottom: 5%;
+}
+
+#contact form {
+  -ms-flex-preferred-size: 58.5%;
+      flex-basis: 58.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#contact input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-bottom: 3.25rem;
+  border: none;
+  border-bottom: 0.25rem solid rgba(157, 157, 157, 0.2);
+}
+
+#contact label:nth-of-type(1) {
+  padding-right: 2rem;
+}
+
+#contact input:nth-of-type(2) {
+  height: 10rem;
+}
+
+#contact label:nth-of-type(2),
+#contact input:nth-of-type(3) {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+#contact input:nth-of-type(2) {
+  margin-bottom: 4rem;
+}
+
+#contact label:nth-of-type(3) {
+  margin-bottom: 2.5rem;
+}
+
+#contact .email {
+  -ms-flex-preferred-size: 36.5%;
+      flex-basis: 36.5%;
+}
+
+#contact .email,
+#contact form {
+  background-color: #fff;
+  padding: 5.5rem 4rem;
 }
 
 button {
@@ -1017,7 +1122,8 @@ button {
   cursor: pointer;
 }
 
-button.download {
+button.download,
+#contact button {
   color: #fff;
   background-color: #FC384B;
   border: transparent;
@@ -1031,12 +1137,15 @@ button.download {
   transition: box-shadow .5s ease-out, -webkit-box-shadow .5s ease-out;
 }
 
-button.download:hover, button.download:focus-within {
+button.download:hover, button.download:focus-within,
+#contact button:hover,
+#contact button:focus-within {
   -webkit-box-shadow: 0.5rem 0.75rem 3.5rem 0.3rem rgba(252, 56, 75, 0.5);
           box-shadow: 0.5rem 0.75rem 3.5rem 0.3rem rgba(252, 56, 75, 0.5);
 }
 
-button.download i {
+button.download i,
+#contact button i {
   font-size: 2rem;
   position: relative;
   right: .5rem;

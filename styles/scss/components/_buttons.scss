@@ -5,7 +5,8 @@ button {
     cursor: pointer;
 }
 
-button.download {
+button.download,
+#contact button {
     color: $white;
     background-color: $accent1;
     border: transparent;
