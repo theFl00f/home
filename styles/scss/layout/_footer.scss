@@ -1,0 +1,15 @@
+footer {
+    margin: 3.5% 0 3%;
+    .wrapper {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .downloadLink {
+        display: flex;
+        align-items: center;
+    }
+    .download {
+        margin-left: 1.5rem;
+    }
+}

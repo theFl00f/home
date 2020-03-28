@@ -64,7 +64,8 @@ header .wrapper {
     max-width: 50%;
     clip-path: circle(32% at 45% 55%);
     z-index: 30;
-    
+    display: flex;
+    align-items: center;
     
 }
 

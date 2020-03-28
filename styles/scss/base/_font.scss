@@ -8,7 +8,8 @@ body, button {
     line-height: 2rem;
 }
 
-button {
+button, 
+.download {
     font-size: 1.1rem;
 }
 
@@ -76,8 +77,30 @@ h4 {
 #contact {
     background-color: unset;
     label,
-    input {
+    input,
+    textarea {
         font-family: $serif;
         font-size: 1.4rem;
+    }
+    .social {
+        font-family: $serif;
+        font-size: 1.6rem;
+    }
+    .links a {
+        font-size: 1.8rem;
+    }
+}
+
+footer {
+    .download,
+    i {
+        font-size:  1rem;
+    }
+    p {
+        font-size: 1.15rem;
+    }
+    p.copyright {
+        filter: opacity(0.3);
+        font-size: 1.05rem;
     }
 }

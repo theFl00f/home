@@ -1,13 +1,17 @@
 #contact  {
     background-image: url(../assets/cityBg2.png);
-    padding-top: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 8.5%;
+    padding-bottom: 12%;
     .wrapper {
-        padding: 0 15.5%;
+        padding: 0 15%;
     }
     .contactForm {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        position: relative;
     }
     h2 {
         padding-bottom: 5%;
@@ -17,35 +21,112 @@
         display: flex;
         flex-flow: row wrap;
     }
-    input {
+    input,
+    textarea {
         flex-grow: 1;
         margin-bottom: 3.25rem;
         border: none;
         border-bottom: .25rem solid rgba(157,157,157, 0.2);
     }
     label:nth-of-type(1) {
-        padding-right: 2rem
+        padding-right: 2rem;
+        flex-shrink: 0;
+        white-space: nowrap;
+        // min-width: 42%;
     }
-
+    input:nth-of-type(1) {
+        // max-width: 58%;
+        min-width: 0;
+        width: 0;
+        flex-shrink: 1;
+    }
     input:nth-of-type(2) {
-        height: 10rem;
+        height: 4.5rem;
     }
     label:nth-of-type(2),
-    input:nth-of-type(3) {
+    input:nth-of-type(2) {
         flex-basis: 100%;
     }
-    input:nth-of-type(2) {
+    textarea {
         margin-bottom: 4rem;
+        resize: vertical;
     }
-    label:nth-of-type(3) {
+    label:nth-of-type(2) {
         margin-bottom: 2.5rem;
-    }
-    .email {
-        flex-basis: 36.5%;
     }
     .email, 
     form {
+        box-shadow: .1rem .1rem 1rem .1rem  rgba(157,157,157, 0.1), -.1rem -.1rem 1rem .1rem  rgba(157,157,157, 0.1);
         background-color: $white;
         padding: 5.5rem 4rem;
+        border: transparent;
+        border-radius: .75rem;
+    }
+    .email {
+        flex-basis: 36.5%;
+        padding: 2.25rem 2rem 2.25rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon {
+            width: 22.5%;
+            position: relative;
+            &::before {
+                content: '';
+                background-image: url(../assets/paperPlane.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 5%;
+                bottom: 6%;
+                left: 5%;
+                right: 0;
+            }
+        }
+
+    }
+    span {
+        padding: .3% 0;
+        border-bottom: .2rem solid rgba(252,56,75, 0.2);
+    }
+    
+    .social {
+        position: absolute;
+        bottom: 0;
+        left: 64%;
+        ul {
+            display: flex;
+        }
+        li {
+            border: transparent;
+            border-radius: .5rem;
+            margin-right: .5rem;
+        }
+        li a {
+            transition: text-shadow .25s ease-out;
+            color: $white;
+            display: block;
+            height: 3.5rem;
+            width: 3.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        li:first-of-type {
+            background-color: $black;
+        }
+        li:nth-of-type(2) {
+            background-color: #00acee;
+        }
+        li:last-of-type {
+            background-color: #0072b1;
+        }
+        li:hover a,
+        li:focus-within a {
+            text-shadow: 0 0 .5rem $white;
+        }
+        p {
+            margin-bottom: 10%;
+        }
     }
 }
