@@ -6,6 +6,12 @@
     padding-bottom: 12%;
     .wrapper {
         padding: 0 15%;
+        @media (max-width: 1070px) {
+            padding: 0 5%;
+        }
+        @include lrg {
+            padding: 0;
+        }
     }
     .contactForm {
         display: flex;
@@ -68,9 +74,17 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include lrg {
+            flex-direction: column;
+        }
         .icon {
             width: 22.5%;
+            min-width: 2rem;
             position: relative;
+            @include lrg {
+                margin: 10%;
+                width: 20%;
+            }
             &::before {
                 content: '';
                 background-image: url(../assets/paperPlane.svg);

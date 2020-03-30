@@ -7,6 +7,9 @@ body {
 header{
     width: 100%;
     min-height: 70rem;
+    @include lrg {
+        min-height: 50rem;
+    }
 }
 
 nav {
@@ -22,6 +25,9 @@ header .wrapper {
     position: relative;
     z-index: 40;
     padding: 14% 0 16%;
+    @include lrg {
+        padding: 11% 0 13%;
+    }
 }
 
 .wave {
@@ -51,6 +57,12 @@ header .wrapper {
         height: 30%;
         width: 20%;
         z-index: 10;
+        @media (max-width: 1070px) {
+            width: 15%;
+            height: 20%;
+            top: 50%;
+            left: 53%;
+        }
     }
 
 }
@@ -66,7 +78,10 @@ header .wrapper {
     z-index: 30;
     display: flex;
     align-items: center;
-    
+    @media (max-width: 1070px) {
+        right: 0;
+        max-width: 45%;
+    }
 }
 
 .curve,
@@ -83,6 +98,10 @@ header .wrapper {
     left: 53%;
     top: 53%;
     z-index: 20;
+    @include lrg {
+        height: 10rem;
+        width: 9rem;
+    }
 }
 
 .bio {
@@ -103,6 +122,9 @@ header .wrapper {
     left: 55%;
     border: .8rem inset $dotColor;
     filter: opacity(0.15) blur(.2rem);
+    @include lrg {
+        height: 10.75rem;
+    }
 }
 
 .bio::before {
@@ -116,7 +138,14 @@ header .wrapper {
     border: transparent;
     border-radius: 50%;
     filter: opacity(0.5);
+    @media (max-width: 1070px) {
+        left: 55%;
+    }
+    @include lrg {
+        left: 57.5%;
+    }
 }
+
 
 h1::before {
     content: '';
@@ -129,6 +158,12 @@ h1::before {
     border: transparent;
     border-radius: 50%;
     filter:  opacity(0.7) brightness(99%) saturate(400%);
+    @media (max-width: 1070px) {
+        left: 70%;
+    }
+    @include lrg {
+        left: 66.5%;
+    }
 }
 
 h1::after {
@@ -142,6 +177,12 @@ h1::after {
     border: transparent;
     border-radius: 50%;
     filter: opacity(0.7) brightness(90%) saturate(300%);
+    @media (max-width: 1070px) {
+        left: 94%;
+    }
+    @include lrg {
+        left: 92%;
+    }
 }
 
 .bgAccent::after {
@@ -175,4 +216,8 @@ h1::after {
     left: 81.5%;
     top: 59.5%;
     z-index: 40;
+    @include lrg {
+        top: 66.6%;
+        left: 83%;
+    }
 }

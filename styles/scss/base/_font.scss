@@ -6,11 +6,17 @@ body, button {
     font-family: $sansSerif;
     font-size: 1.3rem;
     line-height: 2rem;
+    @include lrg {
+        font-size: 1.45rem;
+    }
 }
 
 button, 
 .download {
     font-size: 1.1rem;
+    @include lrg {
+        font-size: 1.2rem;
+    }
 }
 
 body, 
@@ -23,6 +29,9 @@ h1 {
     font-size: 6.2rem;
     text-transform: capitalize;
     line-height: 7rem;
+    @include lrg {
+        font-size: 5.5rem;
+    }
 }
 
 header h2 {
@@ -35,6 +44,9 @@ header h2 {
         position: relative;
         right: .5rem;
         filter: opacity(0.5);
+    }
+    @include lrg {
+        font-size: 1.8rem;
     }
 }
 
@@ -52,6 +64,16 @@ h4 {
     padding: .3rem 2rem;
     border: transparent;
     border-radius: 1.25rem;
+}
+
+nav h3 {
+    font-family: $serif;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.6rem;
+    @include lrg {
+        font-size: 1.9rem;
+    }
 }
 
 #about h4,
@@ -98,9 +120,15 @@ footer {
     }
     p {
         font-size: 1.15rem;
+        @include lrg {
+            font-size: 1.2rem;
+        }
     }
     p.copyright {
         filter: opacity(0.3);
         font-size: 1.05rem;
+        @include lrg {
+            font-size: 1.1rem;
+        }
     }
 }

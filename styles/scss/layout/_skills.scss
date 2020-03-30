@@ -13,6 +13,12 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        @media (max-width: 1070px) {
+            padding: 5% 10%;
+        }
+        @include lrg {
+            padding: 5%;
+        }
     }
     li {
         display: flex;
@@ -53,13 +59,17 @@
         height: 10rem;
         font-size: 7.5rem;
         background-color: $white;
-        // color: $dotColor;
         box-shadow: .1rem .1rem 1rem .1rem $dotColorA, -.1rem -.1rem 1rem .1rem $dotColorA;
+        @media(max-width: 1070px) {
+            width: 15rem;
+            height: 15rem;
+            font-size: 11rem;
+
+        }
         img {
             padding: 10%;
             max-height: 100%;
             display: block;
-            // filter: grayscale(100) contrast(125%);
         }
     }
     h2 {

@@ -5,6 +5,9 @@
     height: 70rem;
     position: relative;
     overflow: hidden;
+    @media (max-width: 1070px) {
+        height: unset;
+    }
     &::after {
         content: '';
         background-image: url(../assets/blob1.svg);
@@ -18,6 +21,12 @@
         background-size: cover;
         transform: rotate(-15deg);
         filter: opacity(0.6);
+        @media (max-width: 1070px) {
+            width: 20rem;
+            height: 30rem;
+            right: -9%;
+            top: -10%;
+        }
     }
 
     .aboutContainer {
@@ -32,6 +41,9 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
+        @media (max-width: 1070px) {
+            margin: 10%;
+        }
         &::before {
             content: '';
             height: 7.5rem;
