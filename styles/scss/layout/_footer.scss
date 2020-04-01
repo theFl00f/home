@@ -13,6 +13,9 @@ footer {
             align-items: center;
             width: 40%;
         }
+        @include sm {
+            width: 85%;
+        }
     }
     .downloadLink {
         display: flex;

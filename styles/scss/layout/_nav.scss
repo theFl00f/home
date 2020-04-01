@@ -1,6 +1,9 @@
 nav {
     position: relative;
     bottom: 1rem;
+    @include med {
+        margin-bottom: 5%;
+    }
 
     &::before {
         content: '';
@@ -13,7 +16,10 @@ nav {
         width: 10.5rem;
         height: 10.5rem;
         transform: rotate(-45deg);
-        
+        @include med {
+            top: unset;
+            bottom: 80%;
+        }
     }
 
     

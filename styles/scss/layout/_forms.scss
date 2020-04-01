@@ -18,6 +18,12 @@
         justify-content: space-between;
         align-items: flex-start;
         position: relative;
+        @include med {
+            flex-direction: column-reverse;
+        }
+        @include sm {
+            align-items: stretch;
+        }
     }
     h2 {
         padding-bottom: 5%;
@@ -26,6 +32,7 @@
         flex-basis: 58.5%;
         display: flex;
         flex-flow: row wrap;
+        
     }
     input,
     textarea {
@@ -34,20 +41,29 @@
         border: none;
         border-bottom: .25rem solid rgba(157,157,157, 0.2);
     }
+    input,
+    textarea,
+    label {
+        @include med {
+            flex-basis: 100%;
+        }
+    }
     label:nth-of-type(1) {
         padding-right: 2rem;
         flex-shrink: 0;
         white-space: nowrap;
-        // min-width: 42%;
     }
     input:nth-of-type(1) {
-        // max-width: 58%;
         min-width: 0;
         width: 0;
         flex-shrink: 1;
+        @include med {
+            height: 4.5rem;
+        }
     }
     input:nth-of-type(2) {
         height: 4.5rem;
+        margin-bottom: 5rem;
     }
     label:nth-of-type(2),
     input:nth-of-type(2) {
@@ -76,6 +92,10 @@
         align-items: center;
         @include lrg {
             flex-direction: column;
+        }
+        @include med {
+            margin-top: 2.5%;
+            margin-bottom: 4%;
         }
         .icon {
             width: 22.5%;
@@ -108,6 +128,11 @@
         position: absolute;
         bottom: 0;
         left: 64%;
+        @include med {
+            bottom: 5.5rem;
+            left: unset;
+            right: 4rem;
+        }
         ul {
             display: flex;
         }

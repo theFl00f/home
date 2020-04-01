@@ -17,6 +17,9 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     max-width: 1200px;
     width: 82%;
     margin: 0 auto;
+    @include sm {
+        width: 90%;
+    }
 }
 
 img {
