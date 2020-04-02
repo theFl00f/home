@@ -33,6 +33,9 @@ h1 {
     @include lrg {
         font-size: 5.5rem;
     }
+    @include sm {
+        white-space: unset;
+    }
 }
 
 header h2 {

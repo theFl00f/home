@@ -27,6 +27,9 @@
             right: -9%;
             top: -10%;
         }
+        @include sm {
+            display: none;
+        }
     }
 
     .aboutContainer {
@@ -68,7 +71,10 @@
             right: -30%;
             top: -70%;
             z-index: -10;
-            filter: opacity(0.3)
+            filter: opacity(0.3);
+            @include sm {
+                display: none;
+            }
         }
     }
     h4,

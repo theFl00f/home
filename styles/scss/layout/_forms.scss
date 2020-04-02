@@ -133,8 +133,15 @@
             left: unset;
             right: 4rem;
         }
+        @include sm {
+            right: 50%;
+            margin-right: -6.5rem;
+        }
         ul {
             display: flex;
+            @include sm {
+                justify-content: center;
+            }
         }
         li {
             border: transparent;

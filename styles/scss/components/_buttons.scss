@@ -70,4 +70,10 @@ footer .download {
         font-size: 1.0rem;
         padding-right: unset;
     }
+    @include sm {
+        margin: auto;
+        margin-bottom: 40%;
+        min-width: 14.5rem;
+        padding-left: 3rem;
+    }
 }

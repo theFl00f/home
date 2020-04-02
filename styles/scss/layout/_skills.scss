@@ -83,11 +83,6 @@
             height: 10rem;
             font-size: 7.5rem;
         }
-        @include sm {
-            width: 15rem;
-            height: 15rem;
-            font-size: 11rem;
-        }
         img {
             padding: 10%;
             max-height: 100%;

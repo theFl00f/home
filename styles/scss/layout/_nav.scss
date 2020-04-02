@@ -20,6 +20,9 @@ nav {
             top: unset;
             bottom: 80%;
         }
+        @include sm {
+            display: none;
+        }
     }
 
     
@@ -30,10 +33,19 @@ nav {
         @include lrg {
             padding: 0 22.5%;
         }
+        @include med {
+            padding: 0 10%;
+        }
+        @include sm {
+            flex-direction: column;
+        }
         h3 {
             padding: .25rem 1rem;
             border: transparent;
             border-radius: 0.5rem;
+            @include sm {
+                margin-top: 5%;
+            }
         }
     }
 }

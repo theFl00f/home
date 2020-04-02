@@ -17,6 +17,9 @@ header {
         height: 72.5rem;
         margin-bottom: 10%;
     }
+    @media (max-width: 418px) {
+        margin-bottom: 0%;
+    }
     .info {
         display: flex;
         flex-direction: column;
@@ -107,6 +110,10 @@ header .wrapper {
         max-width: 75%;
         min-width: 40rem;
     }
+    @include sm {
+        min-width: 100%;
+        max-width: 100%;
+    }
 }
 
 .curve,
@@ -152,16 +159,7 @@ header .wrapper {
     border: .8rem inset $dotColor;
     filter: opacity(0.15) blur(.2rem);
     @media (max-width: 1070px) {
-        top: 46.5%;
-    }
-    @include lrg {
-        top: 42.5%;
-        left: 55%;
-    }
-    @include med {
-        top: unset;
-        bottom: 20%;
-        left: 15%;
+        display: none;
     }
 }
 
@@ -185,6 +183,9 @@ header .wrapper {
     @include med {
         height: 6.5rem;
         width: 6.5rem;
+    }
+    @include sm {
+        display: none;
     }
 }
 
@@ -213,6 +214,9 @@ header .wrapper {
         height: 5rem;
         width: 5rem;
     }
+    @media (max-width: 418px) {
+        display: none;
+    }
 }
 
 .info::after {
@@ -238,6 +242,9 @@ header .wrapper {
         left: 67.5%;
         height: 2.75rem;
         width: 2.75rem;
+    }
+    @media (max-width: 418px) {
+        display: none;
     }
 }
 
