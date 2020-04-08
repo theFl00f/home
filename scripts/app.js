@@ -1,9 +1,12 @@
 const $form = $('form');
 const $name = $('#name');
 const $email = $('#email');
-const $message = $('#message')
+const $message = $('#message');
+const $navButton = $('#nav');
+const $navList = $('nav ul');
+const $header = $('header')
 
-const homeApp = {}
+const homeApp = {};
 
 $form.on('submit', (e) => {
     e.preventDefault();
@@ -22,6 +25,12 @@ $form.on('submit', (e) => {
             timer: 1050
         })
     }
+})
+
+$navButton.on('click', (e) => {
+    e.preventDefault();
+    $navList.toggleClass('expand');
+    $header.toggleClass('expand')
 })
 
 homeApp.clearFields = () => {

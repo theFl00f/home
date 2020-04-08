@@ -1,6 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header::after {
+    @include med {
+        content: '';
+        background-color: rgba(241, 241, 241, 0.3);
+        position: fixed;
+        top: 0;
+        height: 9rem;
+        left: 0;
+        right: 0;
+        border-radius: unset;
+        z-index: 40;
+    }
+}
+
+.expand::after {
+    @include med {
+        background-color: rgba(241, 241, 241, 0.7);
+        z-index: 40;
+    }
+}
+
 nav {
     position: relative;
     bottom: 1rem;
+    z-index: 40;
     @include med {
         margin-bottom: 5%;
     }
@@ -17,15 +43,55 @@ nav {
         height: 10.5rem;
         transform: rotate(-45deg);
         @include med {
-            top: unset;
-            bottom: 80%;
-        }
-        @include sm {
-            display: none;
+            transform: unset;
+            border: unset;
         }
     }
 
+    button, 
+    a.mainContent {
+        display: none;
+        margin: auto;
+        background: transparent;
+        border: unset;
+        cursor: pointer;
+        @include med {
+            display: block;
+            z-index: 100;
+        }
+    }
+
+    button.nav {
+        display: none;
+        margin: auto;
+        font-size: 5rem;
+        background: transparent;
+        border: unset;
+        cursor: pointer;
+        @include med {
+            display: block;
+            position: fixed;
+            top: 3%;
+            right: 10%;
+            z-index: 100;
+        }
+    }
     
+    a.mainContent {
+        font-size: 4rem;
+        @include med {
+            position: absolute;
+            bottom: -6.5rem;
+            width: 10rem;
+            text-align: center;
+            left: 50%;
+            margin-left: -5rem;
+        }
+        @include sm {
+            bottom: -5rem;
+        }
+    }
+
     ul {
         display: flex;
         justify-content: space-around;
@@ -35,9 +101,16 @@ nav {
         }
         @include med {
             padding: 0 10%;
-        }
-        @include sm {
-            flex-direction: column;
+            display: none;
+            &.expand {
+                display: flex;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 90%;
+                height: 9rem;
+                align-items: center;
+            }
         }
         h3 {
             padding: .25rem 1rem;

@@ -16,9 +16,7 @@ header {
     @include med {
         height: 72.5rem;
         margin-bottom: 10%;
-    }
-    @media (max-width: 418px) {
-        margin-bottom: 0%;
+        padding-top: 10rem;
     }
     .info {
         display: flex;
@@ -47,7 +45,7 @@ header .wrapper {
     min-height: inherit;
     position: relative;
     z-index: 40;
-    padding: 5% 0 10%;
+    padding-top: 5%;
     @include med {
         flex-direction: column;
         text-align: center;
@@ -68,6 +66,7 @@ header .wrapper {
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     .displayPic::after {
         content: '';
         position: absolute;
