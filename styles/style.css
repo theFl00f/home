@@ -375,6 +375,12 @@ nav h3 {
   }
 }
 
+@media (max-width: 768px) {
+  nav h3 {
+    font-size: 2.4rem;
+  }
+}
+
 #about h4,
 #skills h4,
 #portfolio h4 {
@@ -890,14 +896,14 @@ html {
     right: 0;
     border-radius: unset;
     z-index: 40;
+    -webkit-transition: height 1s, background-color 1s;
+    transition: height 1s, background-color 1s;
   }
 }
 
-@media (max-width: 768px) {
-  .expand::after {
-    background-color: rgba(241, 241, 241, 0.7);
-    z-index: 40;
-  }
+.expand::after {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 27rem;
 }
 
 nav {
@@ -968,11 +974,18 @@ nav button.nav {
     top: 3%;
     right: 10%;
     z-index: 100;
+    margin-right: 1.5%;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+  }
+  nav button.nav:hover, nav button.nav:focus-within {
+    color: #F030DA;
   }
 }
 
 nav a.mainContent {
   font-size: 4rem;
+  color: #7638FC;
 }
 
 @media (max-width: 768px) {
@@ -983,12 +996,56 @@ nav a.mainContent {
     text-align: center;
     left: 50%;
     margin-left: -5rem;
+    -webkit-animation: arrow 2s ease 5;
+            animation: arrow 2s ease 5;
   }
 }
 
 @media (max-width: 480px) {
   nav a.mainContent {
     bottom: -5rem;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    bottom: -5rem;
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  10% {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  90% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  100% {
+    bottom: -6.5rem;
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    bottom: -5rem;
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  10% {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  90% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  100% {
+    bottom: -6.5rem;
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
   }
 }
 
@@ -1010,31 +1067,45 @@ nav ul {
 @media (max-width: 768px) {
   nav ul {
     padding: 0 10%;
-    display: none;
-  }
-  nav ul.expand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 26rem;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 90%;
-    height: 9rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    top: 10rem;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 15rem;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
-nav ul h3 {
+nav h3 {
   padding: .25rem 1rem;
   border: transparent;
   border-radius: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  nav h3 {
+    padding: 1rem;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+    border-top-left-radius: 12% 50%;
+    border-bottom-left-radius: 12% 50%;
+    min-width: 15rem;
+  }
+}
+
 @media (max-width: 480px) {
-  nav ul h3 {
+  nav h3 {
     margin-top: 5%;
   }
 }
@@ -1061,6 +1132,17 @@ nav ul h3 {
   color: #F030DA;
   background-color: #FFD4F4;
   width: 62%;
+}
+
+@media (max-width: 768px) {
+  .start,
+  .skills,
+  .projects,
+  .contact {
+    width: 100%;
+    text-align: right;
+    min-width: 15rem;
+  }
 }
 
 li:hover .start,
@@ -1658,11 +1740,6 @@ li:focus-within .contact {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact .contactForm {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
@@ -1671,6 +1748,12 @@ li:focus-within .contact {
 
 #contact h2 {
   padding-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  #contact h2 {
+    text-align: center;
+  }
 }
 
 #contact form {
@@ -1795,6 +1878,19 @@ li:focus-within .contact {
   #contact .email .icon {
     margin: 10%;
     width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact .email .icon {
+    margin: 5%;
+    width: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact .email .icon {
+    width: 15%;
   }
 }
 

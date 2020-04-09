@@ -4,7 +4,8 @@ const $email = $('#email');
 const $message = $('#message');
 const $navButton = $('#nav');
 const $navList = $('nav ul');
-const $header = $('header')
+const $header = $('header');
+const $navListItem = $('nav li')
 
 const homeApp = {};
 
@@ -30,7 +31,9 @@ $form.on('submit', (e) => {
 $navButton.on('click', (e) => {
     e.preventDefault();
     $navList.toggleClass('expand');
-    $header.toggleClass('expand')
+    $header.toggleClass('expand');
+    $navListItem.toggleClass('expand');
+    homeApp.showMenu();
 })
 
 homeApp.clearFields = () => {
@@ -52,9 +55,17 @@ homeApp.postEmail = () => {
     })
 }
 
+homeApp.showMenu = () => {
+    $navListItem.each(function(index) {
+        console.log(this)
+        $(this).delay(200*index).fadeToggle(200);
+    })
+}
+
 
 homeApp.init = () => {
     homeApp.clearFields();
+    $navListItem.css('display', 'none');
 }
 
 homeApp.init();

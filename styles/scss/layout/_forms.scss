@@ -20,13 +20,16 @@
         position: relative;
         @include med {
             flex-direction: column-reverse;
+            align-items: stretch;
         }
         @include sm {
-            align-items: stretch;
         }
     }
     h2 {
         padding-bottom: 5%;
+        @include med {
+            text-align: center;
+        }
     }
     form {
         flex-basis: 58.5%;
@@ -104,6 +107,13 @@
             @include lrg {
                 margin: 10%;
                 width: 20%;
+            }
+            @include med {
+                margin: 5%;
+                width: 10%;
+            }
+            @include sm {
+                width: 15%;
             }
             &::before {
                 content: '';
