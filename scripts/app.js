@@ -57,7 +57,6 @@ homeApp.postEmail = () => {
 
 homeApp.showMenu = () => {
     $navListItem.each(function(index) {
-        console.log(this)
         $(this).delay(200*index).fadeToggle(200);
     })
 }
