@@ -325,10 +325,8 @@ h1 {
 }
 
 header h2 {
-  font-size: 1.7rem;
+  font-size: 1.85rem;
   color: #9d9d9d;
-  -webkit-filter: opacity(0.8);
-          filter: opacity(0.8);
   font-weight: 500;
 }
 
@@ -387,13 +385,19 @@ nav h3 {
   font-size: 1.1rem;
 }
 
+.social {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+}
+
 #portfolio h3 {
-  font-size: 1.7rem;
+  font-size: 1.9rem;
 }
 
 #portfolio h4 {
   background-color: unset;
   color: #9d9d9d;
+  font-size: 1.3rem;
 }
 
 #portfolio a {
@@ -410,11 +414,6 @@ nav h3 {
 #contact textarea {
   font-family: "Playfair Display", serif;
   font-size: 1.4rem;
-}
-
-#contact .social {
-  font-family: "Playfair Display", serif;
-  font-size: 1.6rem;
 }
 
 #contact .links a {
@@ -1323,6 +1322,7 @@ li:focus-within .contact {
 #skills {
   background-image: url(../assets/cityBg.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 480px) {
@@ -1912,86 +1912,6 @@ li:focus-within .contact {
   border-bottom: 0.2rem solid rgba(252, 56, 75, 0.2);
 }
 
-#contact .social {
-  position: absolute;
-  bottom: 0;
-  left: 64%;
-}
-
-@media (max-width: 768px) {
-  #contact .social {
-    bottom: 5.5rem;
-    left: unset;
-    right: 4rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #contact .social {
-    right: 50%;
-    margin-right: -6.5rem;
-  }
-}
-
-#contact .social ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media (max-width: 480px) {
-  #contact .social ul {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-#contact .social li {
-  border: transparent;
-  border-radius: .5rem;
-  margin-right: .5rem;
-}
-
-#contact .social li a {
-  -webkit-transition: text-shadow .25s ease-out;
-  transition: text-shadow .25s ease-out;
-  color: #fff;
-  display: block;
-  height: 3.5rem;
-  width: 3.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#contact .social li:first-of-type {
-  background-color: #3A3A3A;
-}
-
-#contact .social li:nth-of-type(2) {
-  background-color: #00acee;
-}
-
-#contact .social li:last-of-type {
-  background-color: #0072b1;
-}
-
-#contact .social li:hover a,
-#contact .social li:focus-within a {
-  text-shadow: 0 0 0.5rem #fff;
-}
-
-#contact .social p {
-  margin-bottom: 10%;
-}
-
 footer {
   margin: 3.5% 0 3%;
 }
@@ -2069,6 +1989,94 @@ footer .download {
     position: static;
     margin: 4% 0 6%;
   }
+}
+
+#contact .social {
+  position: absolute;
+  bottom: 0;
+  left: 64%;
+}
+
+@media (max-width: 768px) {
+  #contact .social {
+    bottom: 5.5rem;
+    left: unset;
+    right: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact .social {
+    right: 50%;
+    margin-right: -6.5rem;
+  }
+}
+
+#about .social {
+  padding: 4% 0 2.5%;
+}
+
+#about .social p {
+  padding-bottom: 7.5%;
+}
+
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .social ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.social li {
+  border: transparent;
+  border-radius: .5rem;
+  margin-right: .5rem;
+}
+
+.social li a {
+  -webkit-transition: text-shadow .25s ease-out;
+  transition: text-shadow .25s ease-out;
+  color: #fff;
+  display: block;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social li:first-of-type {
+  background-color: #3A3A3A;
+}
+
+.social li:nth-of-type(2) {
+  background-color: #00acee;
+}
+
+.social li:last-of-type {
+  background-color: #0072b1;
+}
+
+.social li:hover a,
+.social li:focus-within a {
+  text-shadow: 0 0 0.5rem #fff;
+}
+
+.social p {
+  margin-bottom: 10%;
 }
 
 button {

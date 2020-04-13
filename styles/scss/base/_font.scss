@@ -39,9 +39,8 @@ h1 {
 }
 
 header h2 {
-    font-size: 1.7rem;
+    font-size: 1.85rem;
     color: $dotColor;
-    filter: opacity(0.8);
     font-weight: 500;
     span {
         padding-right: .25rem;
@@ -89,13 +88,19 @@ nav h3 {
     font-size: 1.1rem;
 }
 
+.social {
+    font-family: $serif;
+    font-size: 1.6rem;
+}
+
 #portfolio {
     h3 {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
     h4 {
         background-color: unset;
         color: $dotColor;
+        font-size: 1.3rem;
     }
     a {
         font-size: 1.8rem;
@@ -110,10 +115,6 @@ nav h3 {
     textarea {
         font-family: $serif;
         font-size: 1.4rem;
-    }
-    .social {
-        font-family: $serif;
-        font-size: 1.6rem;
     }
     .links a {
         font-size: 1.8rem;

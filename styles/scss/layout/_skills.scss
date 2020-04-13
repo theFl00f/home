@@ -1,6 +1,7 @@
 #skills {
     background-image: url(../assets/cityBg.png);
     background-repeat: no-repeat;
+    background-size: cover;
     @include sm {
         background-size: cover;
     }

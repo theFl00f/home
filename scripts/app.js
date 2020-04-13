@@ -61,10 +61,21 @@ homeApp.showMenu = () => {
     })
 }
 
+$(window).on('resize', function() {
+    homeApp.checkSize();
+})
+
+homeApp.checkSize = () => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)")
+    if(mediaQuery.matches) {
+        $navListItem.css('display', 'none')
+    } else {
+        $navListItem.css('display', '')
+    }
+}
 
 homeApp.init = () => {
     homeApp.clearFields();
-    $navListItem.css('display', 'none');
 }
 
 homeApp.init();
