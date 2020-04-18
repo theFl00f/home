@@ -18,11 +18,9 @@
         justify-content: space-between;
         align-items: flex-start;
         position: relative;
-        @include med {
+        @include lrg {
             flex-direction: column-reverse;
             align-items: stretch;
-        }
-        @include sm {
         }
     }
     h2 {
@@ -79,38 +77,87 @@
     label:nth-of-type(2) {
         margin-bottom: 2.5rem;
     }
-    .email, 
+    .email,
+    .artstation, 
     form {
         box-shadow: .1rem .1rem 1rem .1rem  rgba(157,157,157, 0.1), -.1rem -.1rem 1rem .1rem  rgba(157,157,157, 0.1);
-        background-color: $white;
-        padding: 5.5rem 4rem;
         border: transparent;
         border-radius: .75rem;
     }
+    form,
     .email {
+        background-color: $white;
+        padding: 5.5rem 4rem;
+    }
+
+    .contactAside {
         flex-basis: 36.5%;
+        @include lrg {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2.5%;
+        }
+        .artstation {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            margin-top: 10%;
+            @include lrg {
+                margin-top: unset;
+                flex-basis: 38%;
+            }
+            img {
+                object-fit: cover;
+                height: 100%;
+                @include med {
+                    transform: scale(150%);
+                }
+                }
+        }
+        a {
+            display: block;
+            &:hover i,
+            &:focus-within i {
+                opacity: 1;
+            }
+        }
+        i {
+            opacity: 0;
+            transition: opacity .5s ease-out;
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            bottom: 0;
+            font-size: 15rem;
+            left: 0;
+            right: 0;
+            background-color: #171717;
+            color: #1EC9F8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .email {
         padding: 2.25rem 2rem 2.25rem 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         @include lrg {
             flex-direction: column;
-        }
-        @include med {
-            margin-top: 2.5%;
-            margin-bottom: 4%;
+            flex-basis: 60%;
+            justify-content: space-evenly;
         }
         .icon {
             width: 22.5%;
             min-width: 2rem;
             position: relative;
             @include lrg {
-                margin: 10%;
+                margin: unset;
                 width: 20%;
             }
             @include med {
-                margin: 5%;
-                width: 10%;
+                width: 15%;
             }
             @include sm {
                 width: 15%;

@@ -76,6 +76,7 @@ homeApp.checkSize = () => {
 
 homeApp.init = () => {
     homeApp.clearFields();
+    homeApp.checkSize();
 }
 
 homeApp.init();

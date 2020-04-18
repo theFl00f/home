@@ -171,6 +171,12 @@ nav {
     width: 62%;
 }
 
+nav li {
+    @include med {
+        display: none;
+    }
+}
+
 .start,
 .skills,
 .projects,
@@ -179,14 +185,6 @@ nav {
         width: 100%;
         text-align: right;
         min-width: 15rem;
-    }
-}
-
-.expand {
-    .start,
-    .skills,
-    .projects,
-    .contact {
     }
 }
 
