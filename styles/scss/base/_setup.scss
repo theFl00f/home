@@ -15,8 +15,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .wrapper {
     max-width: 1200px;
-    width: 82%;
     margin: 0 auto;
+    width: 90%;
+    @media (max-width: 1500px) {
+        width: 82%;        
+    }
     @include sm {
         width: 90%;
     }

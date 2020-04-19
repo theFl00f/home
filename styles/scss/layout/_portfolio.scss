@@ -7,7 +7,10 @@
     }
     ul {
         overflow-x: hidden;
-        margin: 7.5% 19% 10%;
+        margin: 7.5% 10% 10%;
+        @media (max-width: 1500px) {
+            margin: 7.5% 19% 10%;            
+        }
         @media (max-width: 1070px) {
             margin: 7.5% 10% 10%;
         }

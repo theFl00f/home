@@ -38,12 +38,15 @@
         border-bottom: $bgColor solid .75rem;
         border-left: $bgColor solid .75rem;
         border-radius: .75rem;
-        margin: 20%;
         padding: 3% 4.5%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
+        margin: 15% 10%;
+        @media (max-width: 1500) {
+            margin: 20%;            
+        }
         @media (max-width: 1070px) {
             margin: 10%;
         }

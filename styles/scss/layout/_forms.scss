@@ -5,7 +5,7 @@
     padding-top: 8.5%;
     padding-bottom: 12%;
     .wrapper {
-        padding: 0 15%;
+        padding: 0 10%;
         @media (max-width: 1070px) {
             padding: 0 5%;
         }
@@ -30,10 +30,12 @@
         }
     }
     form {
-        flex-basis: 58.5%;
         display: flex;
         flex-flow: row wrap;
-        
+        flex-basis: 70%;
+        @media (max-width: 1250px) {            
+            flex-basis: 65%;
+        }
     }
     input,
     textarea {
@@ -90,29 +92,38 @@
         padding: 5.5rem 4rem;
     }
 
+
+
     .contactAside {
-        flex-basis: 36.5%;
+        flex-basis: 25%;
+        @media (max-width: 1250px) {
+            flex-basis: 30%;
+        }
         @include lrg {
             display: flex;
             justify-content: space-between;
             margin-bottom: 2.5%;
+            flex-basis: 36.5%;
         }
-        .artstation {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            margin-top: 10%;
-            @include lrg {
-                margin-top: unset;
-                flex-basis: 38%;
+        @media (max-width: 390px) {
+            flex-direction: column;
+        }
+    }
+    .artstation {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 10%;
+        @include lrg {
+            margin-top: unset;
+            flex-basis: 38%;
+        }
+        img {
+            object-fit: cover;
+            height: 100%;
+            @include med {
+                transform: scale(150%);
             }
-            img {
-                object-fit: cover;
-                height: 100%;
-                @include med {
-                    transform: scale(150%);
-                }
-                }
         }
         a {
             display: block;
@@ -136,6 +147,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include sm {
+                font-size: 8rem;
+            }
+            @media (max-width:390px) {
+                font-size: 20rem;
+            }
         }
     }
     .email {
@@ -174,8 +191,15 @@
                 right: 0;
             }
         }
-
     }
+
+    .email,
+    .artstation {
+        @media (max-width: 390px) {
+            margin-top: 4%;
+        }
+    }
+
     span {
         padding: .3% 0;
         border-bottom: .2rem solid rgba(252,56,75, 0.2);

@@ -6,7 +6,10 @@ body {
 
 header {
     width: 100%;
-    height: 70rem;
+    height: 90rem;
+    @media (max-width: 1370px) {
+        height: 70rem;
+    }
     @media (max-width: 1070px) {
         height: 58rem;
     }
@@ -61,7 +64,22 @@ header .wrapper {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 31rem;
+        height: 51rem;
+        @media (max-width: 2060px) {
+            height: 46rem;
+        }
+        @media (max-width: 1830px) {
+            height: 41rem;
+        }
+        @media (max-width: 1645px) {
+            height: 37rem;
+        }
+        @media (max-width: 1500px) {
+            height: 35rem;
+        }
+        @media (max-width: 1370px) {
+            height: 31rem;
+        }
         background: url(../assets/startBg.png);
         background-size: cover;
         background-repeat: no-repeat;
