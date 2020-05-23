@@ -1396,7 +1396,7 @@ li:focus-within .contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
 
@@ -1451,12 +1451,12 @@ li:focus-within .contact {
   width: 30%;
 }
 
-#skills li:nth-of-type(4), #skills li:nth-of-type(5), #skills li:nth-of-type(6) {
+#skills li:nth-of-type(4), #skills li:nth-of-type(5), #skills li:nth-of-type(6), #skills li:nth-of-type(10), #skills li:nth-of-type(11), #skills li:nth-of-type(12) {
   margin: 7.5% 0;
 }
 
 @media (max-width: 480px) {
-  #skills li:nth-of-type(4), #skills li:nth-of-type(5), #skills li:nth-of-type(6) {
+  #skills li:nth-of-type(4), #skills li:nth-of-type(5), #skills li:nth-of-type(6), #skills li:nth-of-type(10), #skills li:nth-of-type(11), #skills li:nth-of-type(12) {
     margin: unset;
   }
 }
@@ -1756,6 +1756,26 @@ li:focus-within .contact {
 
 #portfolio li:nth-of-type(3) .links a:hover, #portfolio li:nth-of-type(3) .links a:focus-within {
   color: #fff;
+}
+
+#portfolio li:nth-of-type(4) .links {
+  background-color: #FC384B;
+  -webkit-box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(252, 56, 76, 0.5);
+          box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(252, 56, 76, 0.5);
+}
+
+#portfolio li:nth-of-type(4) .links a {
+  color: #FFEAED;
+}
+
+#portfolio li:nth-of-type(4) .links a:hover, #portfolio li:nth-of-type(4) .links a:focus-within {
+  color: #fff;
+}
+
+#portfolio li:nth-of-type(2) img,
+#portfolio li:nth-of-type(3) img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 #contact {
