@@ -1468,15 +1468,18 @@ li:focus-within .contact {
   }
 }
 
-#skills li:nth-of-type(1) i {
+#skills li:nth-of-type(1) i,
+#skills li:nth-of-type(12) i {
   color: #F030DA;
 }
 
-#skills li:nth-of-type(6) i {
+#skills li:nth-of-type(6) i,
+#skills li:nth-of-type(10) i {
   color: #FC384B;
 }
 
-#skills li:nth-of-type(2) i {
+#skills li:nth-of-type(2) i,
+#skills li:nth-of-type(11) i {
   color: #27A2AA;
 }
 
