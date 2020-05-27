@@ -1911,7 +1911,7 @@ li:focus-within .contact {
 
 #contact textarea {
   margin-bottom: 4rem;
-  resize: vertical;
+  min-width: 100%;
 }
 
 #contact label:nth-of-type(2) {
@@ -1980,13 +1980,13 @@ li:focus-within .contact {
     margin-top: unset;
     -ms-flex-preferred-size: 38%;
         flex-basis: 38%;
+    max-height: 30rem;
   }
 }
 
 #contact .artstation img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -2065,6 +2065,7 @@ li:focus-within .contact {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    max-height: 30rem;
   }
 }
 
@@ -2214,7 +2215,7 @@ footer .download {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 940px) {
   #contact .social {
     bottom: 5.5rem;
     left: unset;
