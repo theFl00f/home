@@ -1719,28 +1719,32 @@ li:focus-within .contact {
   border-radius: 3rem;
 }
 
-#portfolio li:nth-of-type(1) .links {
-  background-color: #27A2AA;
-  -webkit-box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(39, 162, 170, 0.4);
-          box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(39, 162, 170, 0.4);
-}
-
-#portfolio li:nth-of-type(1) .links a {
-  color: #DBFEFF;
-}
-
-#portfolio li:nth-of-type(1) .links a:hover, #portfolio li:nth-of-type(1) .links a:focus-within {
-  color: #fff;
-}
-
-#portfolio li:nth-of-type(2) .links {
+#portfolio li:nth-of-type(1) .links,
+#portfolio li:nth-of-type(5) .links {
   background-color: #F030DA;
   -webkit-box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(240, 48, 218, 0.4);
           box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(240, 48, 218, 0.4);
 }
 
-#portfolio li:nth-of-type(2) .links a {
+#portfolio li:nth-of-type(1) .links a,
+#portfolio li:nth-of-type(5) .links a {
   color: #FFD4F4;
+}
+
+#portfolio li:nth-of-type(1) .links a:hover, #portfolio li:nth-of-type(1) .links a:focus-within,
+#portfolio li:nth-of-type(5) .links a:hover,
+#portfolio li:nth-of-type(5) .links a:focus-within {
+  color: #fff;
+}
+
+#portfolio li:nth-of-type(2) .links {
+  background-color: #27A2AA;
+  -webkit-box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(39, 162, 170, 0.4);
+          box-shadow: 0.25rem 0.5rem 3rem 0.1rem rgba(39, 162, 170, 0.4);
+}
+
+#portfolio li:nth-of-type(2) .links a {
+  color: #DBFEFF;
 }
 
 #portfolio li:nth-of-type(2) .links a:hover, #portfolio li:nth-of-type(2) .links a:focus-within {
@@ -1775,8 +1779,8 @@ li:focus-within .contact {
   color: #fff;
 }
 
-#portfolio li:nth-of-type(2) img,
-#portfolio li:nth-of-type(3) img {
+#portfolio li:nth-of-type(3) img,
+#portfolio li:nth-of-type(4) img {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
