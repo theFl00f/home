@@ -140,3 +140,7 @@ footer {
         }
     }
 }
+
+::selection {
+    background-color: $accent2Lighter;
+}

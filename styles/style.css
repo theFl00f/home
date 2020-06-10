@@ -453,6 +453,14 @@ footer p.copyright {
   }
 }
 
+::-moz-selection {
+  background-color: #E5D9FF;
+}
+
+::selection {
+  background-color: #E5D9FF;
+}
+
 body {
   background: #fff;
   margin: 0;
