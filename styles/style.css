@@ -1789,12 +1789,6 @@ li:focus-within .contact {
   color: #fff;
 }
 
-#portfolio li:nth-of-type(3) img,
-#portfolio li:nth-of-type(4) img {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
 #contact {
   background-image: url(../assets/cityBg2.png);
   background-size: cover;
