@@ -36,6 +36,12 @@ $navButton.on('click', (e) => {
     homeApp.showMenu();
 })
 
+$(window).on('resize', function() {
+    homeApp.checkSize();
+})
+
+
+
 homeApp.clearFields = () => {
     $name.val('');
     $email.val('');
@@ -57,13 +63,11 @@ homeApp.postEmail = () => {
 
 homeApp.showMenu = () => {
     $navListItem.each(function(index) {
+        $(this).stop()
         $(this).delay(200*index).fadeToggle(200);
     })
 }
 
-$(window).on('resize', function() {
-    homeApp.checkSize();
-})
 
 homeApp.checkSize = () => {
     const mediaQuery = window.matchMedia("(max-width: 768px)")
