@@ -10,7 +10,7 @@
     }
     &::after {
         content: '';
-        background-image: url(../assets/blob1.svg);
+        background-image: url(../assets/decorative/blob1.svg);
         overflow: hidden;
         position: absolute;
         height: 60rem;
@@ -68,7 +68,7 @@
             height: 50rem;
             width: 50rem;
             position: absolute;
-            background-image: url(../assets/blob2.svg);
+            background-image: url(../assets/decorative/blob2.svg);
             background-size: cover;
             transform: scale(-1, 1) rotate(-30deg);
             right: -30%;
