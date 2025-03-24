@@ -1,317 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-74373511-4"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>celeste ellerby || home</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <header class="wave">
+      <div class="wrapper">
+        <div class="info">
+          <h4>hi, I am</h4>
+          <h1>celeste ellerby</h1>
+          <h2>
+            <span aria-hidden="true" class="material-symbols-rounded">
+              star
+            </span>
+            developer / animator
+          </h2>
+          <section class="bio">
+            <p>
+              I'm a front-end developer from the GTA with a background in
+              animation!
+            </p>
+            <a
+              href="./assets/resume/CelesteEllerby_Resume2021.pdf"
+              class="download"
+              download="CelesteEllerby_Resume2021.pdf"
+            >
+              <span aria-hidden="true" class="material-symbols-rounded solid"
+                >download_for_offline</span
+              >
+              <p>download resume</p>
+            </a>
+          </section>
+        </div>
+        <div class="displayPic">
+          <img src="./assets/displayPic.jpg" alt="Celeste Ellerby" />
+          <div class="curve"></div>
+          <div class="bgAccent"></div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="wrapper">
+        <button id="nav" class="nav">
+          <span class="material-symbols-rounded solid">menu</span>
+          <span class="sr-only">Menu</span>
+        </button>
+        <a
+          href="#about"
+          id="mainContent"
+          class="mainContent"
+          aria-label="Skip to main content"
+        >
+          <span
+            class="material-symbols-rounded solid"
+            aria-hidden="true"
+            title="Skip to main content"
+          >
+            keyboard_double_arrow_down
+          </span>
+        </a>
+        <ul>
+          <li>
+            <a href="#about">
+              <h3 class="start">start</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#skills">
+              <h3 class="skills">skills</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#portfolio">
+              <h3 class="projects">projects</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <h3 class="contact">contact</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="about">
+      <div class="wrapper">
+        <div class="aboutContainer">
+          <h4>learn more about Celeste!</h4>
+          <h2>About Me</h2>
+          <p>
+            Hey! I'm a front-end developer and storyboard artist/animator who's
+            worked with studios such as Yowza Animation and Gallus
+            Entertainment.
+          </p>
+          <p>
+            I like making art, writing code, finding solutions and petting
+            animals. Check out my recent work in the projects section!
+          </p>
+          <div class="social">
+            <p>Find me on Social!</p>
+            <ul class="links">
+              <li>
+                <a
+                  href="https://github.com/theFl00f"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Celeste Ellerby - Github"
+                >
+                  <img src="./assets/logos/github.svg" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/celestellerby"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Celeste Ellerby - Twitter"
+                >
+                  <img src="./assets/logos/twitter.svg" aria-hidden="true" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/celeste-ellerby/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Celeste Ellerby - LinkedIn"
+                >
+                  <img src="./assets/logos/linkedin.svg" aria-hidden="true" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="wrapper">
+        <h4>some cool skills</h4>
+        <h2>Skills & Abilities</h2>
+        <ul>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/html.svg" alt="the HTML5 logo" />
+            </div>
+            <h3>HTML5</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/css.svg" alt="the CSS3 logo" />
+            </div>
+            <h3>CSS3</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/sass.svg" alt="the Sass logo" />
+            </div>
+            <h3>SCSS</h3>
+          </li>
 
-			gtag("config", "UA-74373511-4");
-		</script>
-
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>celeste ellerby || home</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-
-		<link
-			href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/8e2ca6e025.js"
-			crossorigin="anonymous"
-		></script>
-
-		<link rel="stylesheet" href="./styles/style.css" />
-
-		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.js"
-			integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-			crossorigin="anonymous"
-		></script>
-	</head>
-
-	<body>
-		<header class="wave">
-			<div class="wrapper">
-				<div class="info">
-					<h4>hi, I am</h4>
-					<h1>celeste ellerby</h1>
-					<h2>
-						<span>
-							<i class="far fa-star"></i>
-						</span>
-						developer / animator
-					</h2>
-					<section class="bio">
-						<p>
-							I'm a front-end developer from the GTA with a background in
-							animation!
-						</p>
-						<a
-							href="./assets/resume/CelesteEllerby_Resume2021.pdf"
-							class="download"
-							download="CelesteEllerby_Resume2021.pdf"
-						>
-							<i class="fas fa-arrow-alt-circle-down"></i>
-							<p>download resume</p>
-						</a>
-					</section>
-				</div>
-				<div class="displayPic">
-					<img src="./assets/displayPic.jpg" alt="Celeste Ellerby" />
-					<div class="curve"></div>
-					<div class="bgAccent"></div>
-				</div>
-			</div>
-		</header>
-		<nav>
-			<div class="wrapper">
-				<button id="nav" class="nav">
-					<i class="fas fa-bars" aria-hidden="true" title="Menu"></i>
-					<span class="sr-only">Menu</span>
-				</button>
-				<a
-					href="#about"
-					id="mainContent"
-					class="mainContent"
-					aria-label="Skip to main content"
-				>
-					<i
-						class="fas fa-chevron-down"
-						aria-hidden="true"
-						title="Skip to main content"
-					>
-					</i>
-				</a>
-				<ul>
-					<li>
-						<a href="#about">
-							<h3 class="start">start</h3>
-						</a>
-					</li>
-					<li>
-						<a href="#skills">
-							<h3 class="skills">skills</h3>
-						</a>
-					</li>
-					<li>
-						<a href="#portfolio">
-							<h3 class="projects">projects</h3>
-						</a>
-					</li>
-					<li>
-						<a href="#contact">
-							<h3 class="contact">contact</h3>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<section id="about">
-			<div class="wrapper">
-				<div class="aboutContainer">
-					<h4>learn more about Celeste!</h4>
-					<h2>About Me</h2>
-					<p>
-						Hey! I'm a front-end developer and storyboard artist/animator who's
-						worked with studios such as Yowza Animation and Gallus
-						Entertainment.
-					</p>
-					<p>
-						I like making art, writing code, finding solutions and petting
-						animals. Check out my recent work in the projects section!
-					</p>
-					<div class="social">
-						<p>Find me on Social!</p>
-						<ul class="links">
-							<li>
-								<a
-									href="https://github.com/theFl00f"
-									rel="noopener noreferrer"
-									target="_blank"
-									aria-label="Celeste Ellerby - Github"
-								>
-									<i
-										class="fab fa-github"
-										aria-hidden="true"
-										title="Celeste Ellerby - Github"
-									></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://twitter.com/celestellerby"
-									rel="noopener noreferrer"
-									target="_blank"
-									aria-label="Celeste Ellerby - Twitter"
-								>
-									<i
-										class="fab fa-twitter"
-										aria-hidden="true"
-										title="Celeste Ellerby - Twitter"
-									></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://www.linkedin.com/in/celeste-ellerby/"
-									rel="noopener noreferrer"
-									target="_blank"
-									aria-label="Celeste Ellerby - LinkedIn"
-								>
-									<i
-										class="fab fa-linkedin-in"
-										aria-hidden="true"
-										title="Celeste Ellerby - LinkedIn"
-									></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="skills">
-			<div class="wrapper">
-				<h4>some cool skills</h4>
-				<h2>Skills & Abilities</h2>
-				<ul>
-					<li>
-						<div class="icon">
-							<i class="fab fa-html5"></i>
-						</div>
-						<h3>HTML5</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<i class="fab fa-css3-alt"></i>
-						</div>
-						<h3>CSS3</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<img
-								src="./assets/logos/sass.svg"
-								alt="the Sass logo"
-							/>
-						</div>
-						<h3>SCSS</h3>
-					</li>
-
-					<li>
-						<div class="icon">
-							<i class="fab fa-js-square"></i>
-						</div>
-						<h3>Javascript</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<img
-								src="./assets/logos/typescript.svg"
-								alt="the Typescript logo"
-							/>
-						</div>
-						<h3>Typescript</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<i class="fab fa-react"></i>
-						</div>
-						<h3>React</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<i class="fab fa-node-js"></i>
-						</div>
-						<h3>Node.js</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<img 
-								src="./assets/logos/pgsql.svg" 
-								alt="the PostgreSQL logo" 
-							/>
-						</div>
-						<h3>PostgreSQL</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<img
-								src="./assets/logos/python.svg"
-								alt="the Python logo"
-							/>
-						</div>
-						<h3>Python</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<img
-								src="./assets/logos/aws.svg"
-								alt="the AWS logo"
-							/>
-						</div>
-						<h3>AWS</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<img
-								src="./assets/logos/adobeCC.svg"
-								alt="the Adobe CC logo"
-							/>
-						</div>
-						<h3>Adobe CC</h3>
-					</li>
-					<li>
-						<div class="icon">
-							<img
-								src="./assets/logos/figma.svg"
-								alt="the Figma logo"
-							/>
-						</div>
-						<h3>Figma</h3>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section id="portfolio">
-			<div class="wrapper">
-				<h2>Some Recent Projects</h2>
-				<ul>
-					
-					<li>
-						<div class="project" data-aos="fade-left" data-aos-duration="700">
-							<div class="imgContainer">
-								<img
-									src="./assets/mockups/alertCssGenerator.png"
-									alt="the same device mockup of the alert css generator app"
-								/>
-							</div>
-							<div class="title">
-								<h3>alert css generator</h3>
-								<h4>
-									Bootstrap, jQuery, MongoDB, Express.js, Node.js, tinycolors
-								</h4>
-								<p>
-									Use a color generator, customize your alert, then export it as
-									HTML and CSS and use it in your projects. Save your alert to
-									the database so everyone can see!
-								</p>
-								<div class="links">
-									<!-- Currently not deployed -->
-									<!-- <div class="liveLink">
+          <li>
+            <div class="icon">
+              <img
+                src="./assets/logos/javascript.svg"
+                alt="the Javascript logo"
+              />
+            </div>
+            <h3>Javascript</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img
+                src="./assets/logos/typescript.svg"
+                alt="the Typescript logo"
+              />
+            </div>
+            <h3>Typescript</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/react.svg" alt="the React logo" />
+            </div>
+            <h3>React</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/nodejs.svg" alt="the Node.js logo" />
+            </div>
+            <h3>Node.js</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/pgsql.svg" alt="the PostgreSQL logo" />
+            </div>
+            <h3>PostgreSQL</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/python.svg" alt="the Python logo" />
+            </div>
+            <h3>Python</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/aws.svg" alt="the AWS logo" />
+            </div>
+            <h3>AWS</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/adobeCC.svg" alt="the Adobe CC logo" />
+            </div>
+            <h3>Adobe CC</h3>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./assets/logos/figma.svg" alt="the Figma logo" />
+            </div>
+            <h3>Figma</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="wrapper">
+        <h2>Some Recent Projects</h2>
+        <ul>
+          <li>
+            <div class="project" data-aos="fade-left" data-aos-duration="700">
+              <div class="imgContainer">
+                <img
+                  src="./assets/mockups/alertCssGenerator.png"
+                  alt="the same device mockup of the alert css generator app"
+                />
+              </div>
+              <div class="title">
+                <h3>alert css generator</h3>
+                <h4>
+                  Bootstrap, jQuery, MongoDB, Express.js, Node.js, tinycolors
+                </h4>
+                <p>
+                  Use a color generator, customize your alert, then export it as
+                  HTML and CSS and use it in your projects. Save your alert to
+                  the database so everyone can see!
+                </p>
+                <div class="links">
+                  <!-- Currently not deployed -->
+                  <!-- <div class="liveLink">
 										<a
 											href="https://alert-css-generator.herokuapp.com/"
 											rel="noopener noreferrer"
@@ -325,154 +269,154 @@
 											></i>
 										</a>
 									</div> -->
-									<div class="githubLink">
-										<a
-											href="https://github.com/theFl00f/alert-css-generator"
-											rel="noopener noreferrer"
-											target="_blank"
-											aria-label="find alert css generator on Github"
-										>
-											<i
-												class="fab fa-github"
-												aria-hidden="true"
-												title="find alert css generator on Github"
-											></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
+                  <div class="githubLink">
+                    <a
+                      href="https://github.com/theFl00f/alert-css-generator"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="find alert css generator on Github"
+                    >
+                      <img src="./assets/logos/github.svg" aria-hidden="true" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-					<li>
-						<div 
-						class="project" 
-						data-aos="fade-right"
-						data-aos-duration="700"
-						>
-							<div class="imgContainer">
-								<img src="./assets/mockups/chat.png" alt="the same device mockup of Beyond Bootcamp Chat app">
-							</div>
-							<div class="title">
-								<h3>Beyond Bootcamp Chat</h3>
-								<h4>MongoDB, Express.js, Auth0, socket.io, Node.js, Javascript</h4>
-								<p>Welcome to my first solo full-stack application! See how many users are online, log in with auth0 and delete some old messages. Or be anon, up to you!</p>
-								<div class="links">
-									<!-- Currently not deployed -->
-									<!-- <div class="liveLink">
+          <li>
+            <div class="project" data-aos="fade-right" data-aos-duration="700">
+              <div class="imgContainer">
+                <img
+                  src="./assets/mockups/chat.png"
+                  alt="the same device mockup of Beyond Bootcamp Chat app"
+                />
+              </div>
+              <div class="title">
+                <h3>Beyond Bootcamp Chat</h3>
+                <h4>
+                  MongoDB, Express.js, Auth0, socket.io, Node.js, Javascript
+                </h4>
+                <p>
+                  Welcome to my first solo full-stack application! See how many
+                  users are online, log in with auth0 and delete some old
+                  messages. Or be anon, up to you!
+                </p>
+                <div class="links">
+                  <!-- Currently not deployed -->
+                  <!-- <div class="liveLink">
 										<a href="https://beyondbootcampchat.herokuapp.com/" rel="noopener noreferrer" target="_blank" aria-label="open Beyond Bootcamp Chat in new tab">
 											<i class="fas fa-external-link-alt" aria-hidden="true" title="open Jump in new tab"></i>
 										</a>
 									</div> -->
-									<div class="githubLink">
-										<a href="https://github.com/theFl00f/celeste-ellerby-beyond-bootcamp" rel="noopener noreferrer" target="_blank" aria-label="find Beyond Bootcamp Chat on Github">
-											<i class="fab fa-github" aria-hidden="true" title="find Beyond Bootcamp Chat on Github"></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
+                  <div class="githubLink">
+                    <a
+                      href="https://github.com/theFl00f/celeste-ellerby-beyond-bootcamp"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="find Beyond Bootcamp Chat on Github"
+                    >
+                      <img src="./assets/logos/github.svg" aria-hidden="true" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-					<li>
-						<div class="project" data-aos="fade-left" data-aos-duration="700">
-							<div class="imgContainer">
-								<img
-									src="./assets/mockups/jump.png"
-									alt="the same device mockup of the Jump app"
-								/>
-							</div>
-							<div class="title">
-								<h3>Jump</h3>
-								<h4>HTML, CSS, jQuery</h4>
-								<p>
-									A simplified take on the google t-rex jumping game, try and
-									beat your high score with Jump.
-								</p>
-								<div class="links">
-									<div class="liveLink">
-										<a
-											href="https://jump.celesteellerby.com/"
-											rel="noopener noreferrer"
-											target="_blank"
-											aria-label="open Jump in new tab"
-										>
-											<i
-												class="fas fa-external-link-alt"
-												aria-hidden="true"
-												title="open Jump in new tab"
-											></i>
-										</a>
-									</div>
-									<div class="githubLink">
-										<a
-											href="https://github.com/theFl00f/celesteEllerbyProject03"
-											rel="noopener noreferrer"
-											target="_blank"
-											aria-label="find Jump on Github"
-										>
-											<i
-												class="fab fa-github"
-												aria-hidden="true"
-												title="find Jump on Github"
-											></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
+          <li>
+            <div class="project" data-aos="fade-left" data-aos-duration="700">
+              <div class="imgContainer">
+                <img
+                  src="./assets/mockups/jump.png"
+                  alt="the same device mockup of the Jump app"
+                />
+              </div>
+              <div class="title">
+                <h3>Jump</h3>
+                <h4>HTML, CSS, jQuery</h4>
+                <p>
+                  A simplified take on the google t-rex jumping game, try and
+                  beat your high score with Jump.
+                </p>
+                <div class="links">
+                  <div class="liveLink">
+                    <a
+                      href="https://jump.celesteellerby.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="open Jump in new tab"
+                    >
+                      <span
+                        class="material-symbols-rounded solid"
+                        aria-hidden="true"
+                      >
+                        open_in_new
+                      </span>
+                    </a>
+                  </div>
+                  <div class="githubLink">
+                    <a
+                      href="https://github.com/theFl00f/celesteEllerbyProject03"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="find Jump on Github"
+                    >
+                      <img src="./assets/logos/github.svg" aria-hidden="true" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-					<li>
-						<div class="project" data-aos="fade-right" data-aos-duration="700">
-							<div class="imgContainer">
-								<img
-									src="./assets/mockups/multi.png"
-									alt="the same device mockup of Sophie's multipage website"
-								/>
-							</div>
-							<div class="title">
-								<h3>It's All About Sophie</h3>
-								<h4>HTML, SCSS, PSD Conversion, Multi-page</h4>
-								<p>
-									It's all about Sophie! Head on over to this sample personal
-									multi-page website, converted from PSD.
-								</p>
-								<div class="links">
-									<div class="liveLink">
-										<a
-											href="https://sophie.celesteellerby.com"
-											rel="noopener noreferrer"
-											target="_blank"
-											aria-label="open Sophie's blog in new tab"
-										>
-											<i
-												class="fas fa-external-link-alt"
-												aria-hidden="true"
-												title="open Sophie's blog in new tab"
-											></i>
-										</a>
-									</div>
-									<div class="githubLink">
-										<a
-											href="https://github.com/theFl00f/bootcamp-project02/"
-											rel="noopener noreferrer"
-											target="_blank"
-											aria-label="find Sophie's blog on Github"
-										>
-											<i
-												class="fab fa-github"
-												aria-hidden="true"
-												title="find Sophie's blog on Github"
-											></i>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
+          <li>
+            <div class="project" data-aos="fade-right" data-aos-duration="700">
+              <div class="imgContainer">
+                <img
+                  src="./assets/mockups/multi.png"
+                  alt="the same device mockup of Sophie's multipage website"
+                />
+              </div>
+              <div class="title">
+                <h3>It's All About Sophie</h3>
+                <h4>HTML, SCSS, PSD Conversion, Multi-page</h4>
+                <p>
+                  It's all about Sophie! Head on over to this sample personal
+                  multi-page website, converted from PSD.
+                </p>
+                <div class="links">
+                  <div class="liveLink">
+                    <a
+                      href="https://sophie.celesteellerby.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="open Sophie's blog in new tab"
+                    >
+                      <span
+                        class="material-symbols-rounded solid"
+                        aria-hidden="true"
+                      >
+                        open_in_new
+                      </span>
+                    </a>
+                  </div>
+                  <div class="githubLink">
+                    <a
+                      href="https://github.com/theFl00f/bootcamp-project02/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label="find Sophie's blog on Github"
+                    >
+                      <img src="./assets/logos/github.svg" aria-hidden="true" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
 
-					<!-- <li>
+          <!-- <li>
 						<div class="project" data-aos="fade-left" data-aos-duration="700">
 							<div class="imgContainer">
 								<img
@@ -521,125 +465,150 @@
 							</div>
 						</div>
 					</li> -->
-				</ul>
-			</div>
-		</section>
-		<section id="contact">
-			<div class="wrapper">
-				<h2>Have a <span>Question?</span></h2>
-				<div class="contactForm">
-					<form method="POST" action="https://formspree.io/xjvevydo">
-						<label for="name">Hello! My name is </label>
-						<input type="text" name="name" id="name" />
-						<label for="message">and here is my message:</label>
-						<textarea name="message" id="message" cols="20" rows="3"></textarea>
-						<label for="email"
-							>I will leave you my e-mail... please reply!</label
-						>
-						<input type="email" name="email" id="email" />
-						<button type="submit">
-							<span>
-								<i class="fas fa-location-arrow"></i>
-							</span>
-							Send Message
-						</button>
-					</form>
-					<aside class="contactAside">
-						<div class="email">
-							<div class="icon">
-								<img src="./assets/decorative/planeBlob.svg" alt="an airplane icon" />
-							</div>
-							<p>celeste.ellerby@gmail.com</p>
-						</div>
-						<div class="artstation">
-							<a
-								href="https://www.artstation.com/celesteellerby"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Celeste Ellerby - Artstation"
-							>
-								<i
-									class="fab fa-artstation"
-									aria-hidden="true"
-									title="Celeste Ellerby - Artstation"
-								></i>
-								<img
-									src="./assets/selfie.jpg"
-									alt="a self portrait of blue-haired Celeste Ellerby"
-								/>
-							</a>
-						</div>
-					</aside>
-					<div class="social">
-						<p>Find me on Social!</p>
-						<ul class="links">
-							<li>
-								<a
-									href="https://github.com/theFl00f"
-									rel="noopener noreferrer"
-									target="_blank"
-									aria-label="Github"
-								>
-									<i
-										class="fab fa-github"
-										aria-hidden="true"
-										title="Celeste Ellerby - Github"
-									></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://twitter.com/celestellerby"
-									rel="noopener noreferrer"
-									target="_blank"
-									aria-label="Celeste Ellerby - Twitter"
-								>
-									<i
-										class="fab fa-twitter"
-										aria-hidden="true"
-										title="Celeste Ellerby - Twitter"
-									></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://www.linkedin.com/in/celeste-ellerby/"
-									rel="noopener noreferrer"
-									target="_blank"
-									aria-label="Celeste Ellerby - LinkedIn"
-								>
-									<i
-										class="fab fa-linkedin-in"
-										aria-hidden="true"
-										title="Celeste Ellerby - LinkedIn"
-									></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer>
-			<div class="wrapper">
-				<div class="downloadLink">
-					<p>Would you like to see my resume?</p>
-					<a
-						href="./assets/CelesteEllerby_Resume2021.pdf"
-						class="download"
-						download="CelesteEllerby_Resume2021.pdf"
-					>
-						<i class="fas fa-arrow-alt-circle-down"></i>
-						<p>Download Resume</p>
-					</a>
-				</div>
-				<p class="copyright">Design from themenum.com 2020</p>
-			</div>
-		</footer>
-	</body>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
-	<script src="./scripts/app.js"></script>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrapper">
+        <h2>Have a <span>Question?</span></h2>
+        <div class="contactForm">
+          <form method="POST" action="https://formspree.io/xjvevydo">
+            <label for="name">Hello! My name is </label>
+            <input type="text" name="name" id="name" />
+            <label for="message">and here is my message:</label>
+            <textarea name="message" id="message" cols="20" rows="3"></textarea>
+            <label for="email"
+              >I will leave you my e-mail... please reply!</label
+            >
+            <input type="email" name="email" id="email" />
+            <button type="submit">
+              <span class="material-symbols-rounded solid" aria-hidden="true">
+                send
+              </span>
+              Send Message
+            </button>
+          </form>
+          <aside class="contactAside">
+            <div class="email">
+              <div class="icon">
+                <img
+                  src="./assets/decorative/planeBlob.svg"
+                  alt="an airplane icon"
+                />
+              </div>
+              <p>celeste.ellerby@gmail.com</p>
+            </div>
+            <div class="artstation">
+              <a
+                href="https://www.artstation.com/celesteellerby"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Celeste Ellerby - Artstation"
+              >
+                <!-- <i
+                  class="fab fa-artstation"
+                  aria-hidden="true"
+                  title="Celeste Ellerby - Artstation"
+                ></i>
+				 -->
+                <img
+                  src="./assets/logos/artstation.svg"
+                  alt="the Artstation logo"
+                  aria-hidden="true"
+                />
+                <img
+                  src="./assets/selfie.jpg"
+                  alt="a self portrait of blue-haired Celeste Ellerby"
+                />
+              </a>
+            </div>
+          </aside>
+          <div class="social">
+            <p>Find me on Social!</p>
+            <ul class="links">
+              <li>
+                <a
+                  href="https://github.com/theFl00f"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Github"
+                >
+                  <img
+                    src="./assets/logos/github.svg"
+                    aria-hidden="true"
+                    alt="the Github logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/celestellerby"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Celeste Ellerby - Twitter"
+                >
+                  <img
+                    src="./assets/logos/twitter.svg"
+                    aria-hidden="true"
+                    alt="the Twitter logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/celeste-ellerby/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label="Celeste Ellerby - LinkedIn"
+                >
+                  <img
+                    src="./assets/logos/linkedin.svg"
+                    aria-hidden="true"
+                    alt="the LinkedIn logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="downloadLink">
+          <p>Would you like to see my resume?</p>
+          <a
+            href="./assets/CelesteEllerby_Resume2021.pdf"
+            class="download"
+            download="CelesteEllerby_Resume2021.pdf"
+          >
+            <span aria-hidden="true" class="material-symbols-rounded solid"
+              >download_for_offline</span
+            >
+            <p>Download Resume</p>
+          </a>
+        </div>
+        <p class="copyright">Design from themenum.com 2020</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./scripts/app.js"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-74373511-4"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-74373511-4");
+  </script>
 </html>

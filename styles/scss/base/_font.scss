@@ -1,146 +1,185 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../styles/fonts/Raleway-Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("../styles/fonts/PlayfairDisplay-Variable.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Material Symbols Rounded";
+  font-style: normal;
+  src: url("../styles/fonts/MaterialSymbolsRounded.woff2") format("woff2");
+}
+
+.material-symbols-rounded {
+  font-family: "Material Symbols Rounded";
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  font-variation-settings: "wght" 300, "GRAD" 0, "opsz" 48;
+  &.solid {
+    font-variation-settings: "FILL" 1, "wght" 600, "GRAD" 0, "opsz" 48;
+  }
+}
+
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
-body, button {
-    font-family: $sansSerif;
-    font-size: 1.3rem;
-    line-height: 2rem;
-    @include lrg {
-        font-size: 1.45rem;
-    }
+body,
+button {
+  font-family: $sansSerif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  @include lrg {
+    font-size: 1.45rem;
+  }
 }
 
-button, 
+.nav span {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+button,
 .download {
-    font-size: 1.1rem;
-    @include lrg {
-        font-size: 1.2rem;
-    }
+  font-size: 1.1rem;
+  span {
+    font-size: 2rem;
+  }
+  @include lrg {
+    font-size: 1.2rem;
+  }
 }
 
-body, 
+body,
 h1 {
-    color: $black;
+  color: $black;
 }
 
 h1 {
-    white-space: nowrap;
-    font-family: $serif;
-    font-size: 6.2rem;
-    text-transform: capitalize;
-    line-height: 7rem;
-    @include lrg {
-        font-size: 5.5rem;
-    }
-    @include sm {
-        white-space: unset;
-    }
+  white-space: nowrap;
+  font-family: $serif;
+  font-size: 6.2rem;
+  text-transform: capitalize;
+  line-height: 7rem;
+  @include lrg {
+    font-size: 5.5rem;
+  }
+  @include sm {
+    white-space: unset;
+  }
 }
 
 header h2 {
-    font-size: 1.85rem;
-    color: $dotColor;
-    font-weight: 500;
-    span {
-        padding-right: .25rem;
-        position: relative;
-        right: .5rem;
-        filter: opacity(0.5);
-    }
-    @include lrg {
-        font-size: 1.8rem;
-    }
+  font-size: 1.85rem;
+  color: $dotColor;
+  font-weight: 500;
+  display: flex;
+  span {
+    filter: opacity(0.5);
+    font-size: 3rem;
+  }
+
+  @include lrg {
+    font-size: 1.8rem;
+  }
 }
 
 h2 {
-    font-size: 2.8rem;
-    font-family: $serif;
-    font-weight: 400;
+  font-size: 2.8rem;
+  font-family: $serif;
+  font-weight: 400;
 }
 
 h4 {
-    text-transform: uppercase;
-    color: $accent1;
-    background-color: $accent1Lighter;
-    font-weight: 700;
-    padding: .3rem 2rem;
-    border: transparent;
-    border-radius: 1.25rem;
+  text-transform: uppercase;
+  color: $accent1;
+  background-color: $accent1Lighter;
+  font-weight: 700;
+  padding: 0.3rem 2rem;
+  border: transparent;
+  border-radius: 1.25rem;
 }
 
 nav h3 {
-    font-family: $serif;
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 1.6rem;
-    @include lrg {
-        font-size: 1.9rem;
-    }
-    @include med  {
-        font-size: 2.4rem;
-    }
+  font-family: $serif;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.6rem;
+  @include lrg {
+    font-size: 1.9rem;
+  }
+  @include med {
+    font-size: 2.4rem;
+  }
 }
 
 #about h4,
 #skills h4,
 #portfolio h4 {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .social {
-    font-family: $serif;
-    font-size: 1.6rem;
+  font-family: $serif;
+  font-size: 1.6rem;
 }
 
 #portfolio {
-    h3 {
-        font-size: 1.9rem;
-    }
-    h4 {
-        background-color: unset;
-        color: $dotColor;
-        font-size: 1.3rem;
-    }
-    a {
-        font-size: 1.8rem;
-        text-shadow: .1rem .1rem .5rem $black;
-    }
+  h3 {
+    font-size: 1.9rem;
+  }
+  h4 {
+    background-color: unset;
+    color: $dotColor;
+    font-size: 1.3rem;
+  }
+  a {
+    font-size: 1.8rem;
+    filter: drop-shadow(0.1rem 0.1rem 0.5rem $black);
+  }
 }
 
 #contact {
-    background-color: unset;
-    label,
-    input,
-    textarea {
-        font-family: $serif;
-        font-size: 1.4rem;
-    }
-    .links a {
-        font-size: 1.8rem;
-    }
+  background-color: unset;
+  label,
+  input,
+  textarea {
+    font-family: $serif;
+    font-size: 1.4rem;
+  }
+  .links a {
+    font-size: 1.8rem;
+  }
 }
 
 footer {
-    .download,
-    i {
-        font-size:  1rem;
+  .download,
+  i {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1.15rem;
+    @include lrg {
+      font-size: 1.2rem;
     }
-    p {
-        font-size: 1.15rem;
-        @include lrg {
-            font-size: 1.2rem;
-        }
+  }
+  p.copyright {
+    filter: opacity(0.3);
+    font-size: 1.05rem;
+    @include lrg {
+      font-size: 1.1rem;
     }
-    p.copyright {
-        filter: opacity(0.3);
-        font-size: 1.05rem;
-        @include lrg {
-            font-size: 1.1rem;
-        }
-    }
+  }
 }
 
 ::selection {
-    background-color: $accent2Lighter;
+  background-color: $accent2Lighter;
 }

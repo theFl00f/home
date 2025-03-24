@@ -1,209 +1,207 @@
-#contact  {
-    background-image: url(../assets/decorative/cityBg2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 8.5%;
-    padding-bottom: 12%;
-    .wrapper {
-        padding: 0 10%;
-        @media (max-width: 1070px) {
-            padding: 0 5%;
-        }
-        @include lrg {
-            padding: 0;
-        }
+#contact {
+  background-image: url(../assets/decorative/cityBg2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 8.5%;
+  padding-bottom: 12%;
+  .wrapper {
+    padding: 0 10%;
+    @media (max-width: 1070px) {
+      padding: 0 5%;
     }
-    .contactForm {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        position: relative;
-        @include lrg {
-            flex-direction: column-reverse;
-            align-items: stretch;
-        }
+    @include lrg {
+      padding: 0;
     }
-    h2 {
-        padding-bottom: 5%;
-        @include med {
-            text-align: center;
-        }
+  }
+  .contactForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    @include lrg {
+      flex-direction: column-reverse;
+      align-items: stretch;
     }
-    form {
-        display: flex;
-        flex-flow: row wrap;
-        flex-basis: 70%;
-        @media (max-width: 1250px) {            
-            flex-basis: 65%;
-        }
+  }
+  h2 {
+    padding-bottom: 5%;
+    @include med {
+      text-align: center;
     }
-    input,
-    textarea {
-        flex-grow: 1;
-        margin-bottom: 3.25rem;
-        border: none;
-        border-bottom: .25rem solid rgba(157,157,157, 0.2);
+  }
+  form {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 70%;
+    @media (max-width: 1250px) {
+      flex-basis: 65%;
     }
-    input,
-    textarea,
-    label {
-        @include med {
-            flex-basis: 100%;
-        }
+  }
+  input,
+  textarea {
+    flex-grow: 1;
+    margin-bottom: 3.25rem;
+    border: none;
+    border-bottom: 0.25rem solid rgba(157, 157, 157, 0.2);
+  }
+  input,
+  textarea,
+  label {
+    @include med {
+      flex-basis: 100%;
     }
-    label:nth-of-type(1) {
-        padding-right: 2rem;
-        flex-shrink: 0;
-        white-space: nowrap;
+  }
+  label:nth-of-type(1) {
+    padding-right: 2rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+  input:nth-of-type(1) {
+    min-width: 0;
+    width: 0;
+    flex-shrink: 1;
+    @include med {
+      height: 4.5rem;
     }
-    input:nth-of-type(1) {
-        min-width: 0;
-        width: 0;
-        flex-shrink: 1;
-        @include med {
-            height: 4.5rem;
-        }
-    }
-    input:nth-of-type(2) {
-        height: 4.5rem;
-        margin-bottom: 5rem;
-    }
-    label:nth-of-type(2),
-    input:nth-of-type(2) {
-        flex-basis: 100%;
-    }
-    textarea {
-        margin-bottom: 4rem;
-        min-width: 100%;
-    }
-    label:nth-of-type(2) {
-        margin-bottom: 2.5rem;
-    }
-    .email,
-    .artstation, 
-    form {
-        box-shadow: .1rem .1rem 1rem .1rem  rgba(157,157,157, 0.1), -.1rem -.1rem 1rem .1rem  rgba(157,157,157, 0.1);
-        border: transparent;
-        border-radius: .75rem;
-    }
-    form,
-    .email {
-        background-color: $white;
-        padding: 5.5rem 4rem;
-    }
+  }
+  input:nth-of-type(2) {
+    height: 4.5rem;
+    margin-bottom: 5rem;
+  }
+  label:nth-of-type(2),
+  input:nth-of-type(2) {
+    flex-basis: 100%;
+  }
+  textarea {
+    margin-bottom: 4rem;
+    min-width: 100%;
+  }
+  label:nth-of-type(2) {
+    margin-bottom: 2.5rem;
+  }
+  .email,
+  .artstation,
+  form {
+    box-shadow: 0.1rem 0.1rem 1rem 0.1rem rgba(157, 157, 157, 0.1),
+      -0.1rem -0.1rem 1rem 0.1rem rgba(157, 157, 157, 0.1);
+    border: transparent;
+    border-radius: 0.75rem;
+  }
+  form,
+  .email {
+    background-color: $white;
+    padding: 5.5rem 4rem;
+  }
 
-
-
-    .contactAside {
-        flex-basis: 25%;
-        @media (max-width: 1250px) {
-            flex-basis: 30%;
-        }
-        @include lrg {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 2.5%;
-            flex-basis: 36.5%;
-        }
-        @media (max-width: 390px) {
-            flex-direction: column;
-        }
+  .contactAside {
+    flex-basis: 25%;
+    @media (max-width: 1250px) {
+      flex-basis: 30%;
     }
-    .artstation {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        margin-top: 10%;
-        @include lrg {
-            margin-top: unset;
-            flex-basis: 38%;
-            max-height: 30rem;
-        }
-        img {
-            object-fit: cover;
-            @include med {
-                transform: scale(150%);
-            }
-        }
-        a {
-            display: block;
-            &:hover i,
-            &:focus-within i {
-                opacity: 1;
-            }
-        }
-        i {
-            opacity: 0;
-            transition: opacity .5s ease-out;
-            position: absolute;
-            z-index: 100;
-            top: 0;
-            bottom: 0;
-            font-size: 15rem;
-            left: 0;
-            right: 0;
-            background-color: #171717;
-            color: #1EC9F8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include sm {
-                font-size: 8rem;
-            }
-            @media (max-width:390px) {
-                font-size: 20rem;
-            }
-        }
+    @include lrg {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2.5%;
+      flex-basis: 36.5%;
     }
-    .email {
-        padding: 2.25rem 2rem 2.25rem 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include lrg {
-            flex-direction: column;
-            flex-basis: 60%;
-            justify-content: space-evenly;
-            max-height: 30rem;
+    @media (max-width: 390px) {
+      flex-direction: column;
+    }
+  }
+  .artstation {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10%;
+    @include lrg {
+      margin-top: unset;
+      flex-basis: 38%;
+      max-height: 30rem;
+    }
+    img:last-of-type {
+      object-fit: cover;
+      @include med {
+        transform: scale(150%);
+      }
+    }
+    a {
+      display: block;
+      &:hover img:first-of-type,
+      &:focus-within img:first-of-type {
+        opacity: 1;
+      }
+    }
+    img:first-of-type {
+      opacity: 0;
+      transition: opacity 0.5s ease-out;
+      position: absolute;
+      z-index: 100;
+      font-size: 15rem;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background-color: #171717;
+      color: #1ec9f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include sm {
+        font-size: 8rem;
+      }
+      @media (max-width: 390px) {
+        font-size: 20rem;
+      }
+    }
+  }
+  .email {
+    padding: 2.25rem 2rem 2.25rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include lrg {
+      flex-direction: column;
+      flex-basis: 60%;
+      justify-content: space-evenly;
+      max-height: 30rem;
+    }
+    .icon {
+      width: 22.5%;
+      min-width: 2rem;
+      position: relative;
+      @include lrg {
+        margin: unset;
+        width: 20%;
+      }
+      @include med {
+        width: 15%;
+      }
+      @include sm {
+        width: 15%;
+      }
+      &::before {
+        content: "";
+        background-image: url(../assets/decorative/paperPlane.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 5%;
+        bottom: 6%;
+        left: 5%;
+        right: 0;
+      }
+    }
+  }
 
-        }
-        .icon {
-            width: 22.5%;
-            min-width: 2rem;
-            position: relative;
-            @include lrg {
-                margin: unset;
-                width: 20%;
-            }
-            @include med {
-                width: 15%;
-            }
-            @include sm {
-                width: 15%;
-            }
-            &::before {
-                content: '';
-                background-image: url(../assets/decorative/paperPlane.svg);
-                background-size: contain;
-                background-repeat: no-repeat;
-                position: absolute;
-                top: 5%;
-                bottom: 6%;
-                left: 5%;
-                right: 0;
-            }
-        }
+  .email,
+  .artstation {
+    @media (max-width: 390px) {
+      margin-top: 4%;
     }
+  }
 
-    .email,
-    .artstation {
-        @media (max-width: 390px) {
-            margin-top: 4%;
-        }
-    }
-
-    span {
-        padding: .3% 0;
-        border-bottom: .2rem solid rgba(252,56,75, 0.2);
-    }
+  span {
+    padding: 0.3% 0;
+    border-bottom: 0.2rem solid rgba(252, 56, 75, 0.2);
+  }
 }
