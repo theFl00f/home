@@ -1,72 +1,77 @@
-
 #contact {
-    .social {
-        position: absolute;
-        bottom: 0;
-        left: 75%;
-        @media (max-width:1370px) {
-            left: 73%;            
-        };
-        @media (max-width: 1250px) {
-            left: 70%;
-        }
-        @include lrg {
-            bottom: 5.5rem;
-            left: unset;
-            right: 4rem;
-        }
-        @include sm {
-            right: 50%;
-            margin-right: -6.5rem;
-        }
+  .social {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    @media (max-width: 1370px) {
+      left: 73%;
     }
+    @media (max-width: 1250px) {
+      left: 70%;
+    }
+    @include lrg {
+      bottom: 5.5rem;
+      left: unset;
+      right: 4rem;
+    }
+    @include sm {
+      right: 50%;
+      margin-right: -6.5rem;
+    }
+  }
 }
 
 #about {
-    .social {
-        padding: 4% 0 2.5%;
-        p {
-            padding-bottom: 7.5%;
-        }
+  .social {
+    padding: 4% 0 2.5%;
+    p {
+      padding-bottom: 7.5%;
     }
+  }
 }
 
 .social {
-    ul {
-        display: flex;
-        @include sm {
-            justify-content: center;
-        }
+  ul {
+    display: flex;
+    @include sm {
+      justify-content: center;
     }
-    li {
-        border: transparent;
-        border-radius: .5rem;
-        margin-right: .5rem;
+  }
+  li {
+    border: transparent;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+    img {
+      padding: 0.5rem;
     }
-    li a {
-        transition: text-shadow .25s ease-out;
-        color: $white;
-        display: block;
-        height: 3.5rem;
-        width: 3.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+  }
+  li a {
+    transition: text-shadow 0.25s ease-out;
+    color: $white;
+    display: block;
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  li:first-of-type {
+    background-color: $black;
+  }
+  li:nth-of-type(2) {
+    background-color: #00acee;
+  }
+  li:last-of-type {
+    background-color: #0072b1;
+    img {
+      padding: 0.75rem;
     }
-    li:first-of-type {
-        background-color: $black;
-    }
-    li:nth-of-type(2) {
-        background-color: #00acee;
-    }
-    li:last-of-type {
-        background-color: #0072b1;
-    }
-    li:hover a,
-    li:focus-within a {
-        text-shadow: 0 0 .5rem $white;
-    }
-    p {
-        margin-bottom: 10%;
-    }
+  }
+  li:hover a,
+  li:focus-within a {
+    text-shadow: 0 0 0.5rem $white;
+  }
+  p {
+    margin-bottom: 10%;
+  }
 }
